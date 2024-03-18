@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <!-- cSS RESET -->
+    <link rel="stylesheet" href="minireset.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href=" style.css" />
+
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="info">
+          <form action="#">
+            <div class="form-div">
+                <div>
+                    <label for="day">Day</strong></label>
+                    <input type="number" name="day" id="dayId" placeholder="DD" class="error"/>
+                    <span class="eMsg" id="errorDayMsg">Testing Span</span>
+                  </div>
+                  <div>
+                    <label for="month">Month</label>
+                    <input type="number" name="month" id="monthId" placeholder="MM" />
+                    <span class="eMsg" id="errorMonthMsg">Testing Span</span>
+                  </div>
+                  <div>
+                    <label for="year">Year</label>
+                    <input type="number" name="year" id="yearId" placeholder="YYYY" />
+                    <span class="eMsg"id="errorYearMsg">Testing Span</span>
+                  </div>
+            </div>
+            <div class="submitBtn">
+                <div class="straightLine"><hr></div>
+                <div>
+                  <button type="submit" class="submitImg"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+                </div>
+            </div>
+          </form>
+          <div class="results">
+            <div><span id="yearResults"> --</span>years</div>
+            <div><span id="monthResults"> --</span>months</div>
+            <div><span id="dayResults"> --</span>days</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <p> Dont say Anything</p> -->
+    <script src="./main.js"></script>
+  </body>
+</html>
